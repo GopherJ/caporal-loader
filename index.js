@@ -19,21 +19,15 @@ function caporalLoader(subcmdsPath, version = '1.0.0', description = '') {
 }
 
 caporalLoader.prototype.subcmdsPath = function(subcmdsPath) {
-   return isUndefined(subcmdsPath)
-        ? this._subcmdsPath
-        : (this._subcmdsPath = subcmdsPath, this);
+   return isUndefined(subcmdsPath) ? this._subcmdsPath : (this._subcmdsPath = subcmdsPath, this);
 }
 
 caporalLoader.prototype.version = function(version) {
-    return isUndefined(version)
-        ? this._version
-        : (this._version = version, this);
+    return isUndefined(version) ? this._version : (this._version = version, this);
 }
 
 caporalLoader.prototype.description = function(description) {
-    return isUndefined(description)
-        ? this._description
-        : (this._description = description, this);
+    return isUndefined(description) ? this._description : (this._description = description, this);
 }
 
 caporalLoader.prototype.parse = function(argv) {

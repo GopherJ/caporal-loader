@@ -24,3 +24,45 @@ caporalLoader()
     .description('demo app')
     .parse();
 ```
+
+**AND** put your subcmds in directory 'subcmds', make them use the following format.
+
+```
+const alias = 'ALIAS'; // subcmd alias
+
+const command = {
+    name: '', // subcmd's name
+    description: '' // subcmd's description
+};
+
+const arguments = [
+    {
+        var: 'NAME', // name to be used in action. e.g. args.NAME  
+        description: '',
+        complete: () => Promise.resolve([...])
+    }
+];
+
+const options = [
+    {
+        var: 'NAME',
+        description: '',
+        validator: () => {},
+        default: '',
+        required: '',
+        complete: () => Promise.resolve([...])
+    }
+];
+
+const action = (args, opts, log) => {
+    //
+};
+
+module.exports = {
+    alias,
+    command,
+    arguments,
+    options,
+    action
+}
+```
