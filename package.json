@@ -1,0 +1,23 @@
+{
+  "name": "caporal-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GopherJ/caporal-loader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GopherJ/caporal-loader/issues"
+  },
+  "homepage": "https://github.com/GopherJ/caporal-loader#readme",
+  "dependencies": {
+    "uti-js": "^1.0.5"
+  }
+}
