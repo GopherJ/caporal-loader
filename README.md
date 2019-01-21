@@ -27,7 +27,7 @@ caporalLoader()
 
 **AND** put your subcmds in directory 'subcmds', make them use the following format.
 
-```
+```javascript
 const alias = 'ALIAS'; // subcmd alias
 
 const command = {
